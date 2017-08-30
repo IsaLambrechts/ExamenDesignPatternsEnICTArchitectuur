@@ -7,15 +7,13 @@ public class RemoteControl {
 	public RemoteControl(){}
 	
 	public void setAllDoorsOpen(DomoticaObject object) {
-		DoorsOpenCommand openCmd = new DoorsOpenCommand(object);
-		openCmd.execute();
-		//object.update();
+		DoorsOpenCommand openDoorCommand = new DoorsOpenCommand(object);
+		openDoorCommand.execute();
 	}
 	
 	public void setAllDoorsClosed(DomoticaObject object) {
-		DoorsCloseCommand closeCmd = new DoorsCloseCommand(object);
-		closeCmd.execute();
-		//object.update();
+		DoorsCloseCommand closeDoorCommand = new DoorsCloseCommand(object);
+		closeDoorCommand.execute();
 	}
 
 }
