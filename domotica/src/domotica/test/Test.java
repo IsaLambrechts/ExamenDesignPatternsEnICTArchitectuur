@@ -71,7 +71,20 @@ public class Test {
 			round(house);
 		}*/
 		
+		Room[] array = new Room[4];
+		array[0] = house.getBathroom();
+		array[1] = house.getBedroom();
+		array[2] = house.getKitchen();
+		array[3] = house.getLiving();
 		
+		int rnd = new Random().nextInt(array.length);
+		Room chosenRoom = array[rnd];
+		
+		RemoteControl remote = new RemoteControl();
+		
+		System.out.println(chosenRoom);
+		remote.setAllDoorsClosed(chosenRoom);
+		remote.setAllDoorsOpen(chosenRoom);
 		
 		
 	}
