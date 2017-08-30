@@ -1,0 +1,15 @@
+1/ Hoe zou je security in deze applicatie implementeren?
+De user session ergens bijhouden zodat die niet verloren gaat als de webapp crashed.
+Een inlog systeem zou ook een verbetering zijn, langs de klant zijn kant.
+2/ Hoe zou je logging in deze applicatie implementeren?
+Door middel van een extra logging layer toe te voegen tussen de business layer en 
+de data access layer.
+3/ Waar zit het grootste risico in deze architectuur?
+Ze gebruiken een extern boekhoudpakket die ze van een vorige commerciele onderneming, 
+als hier een fout in loopt, of onbereikbaar wordt, werkt heel hun financiëel proces niet meer, 
+kunnen ze online geen betalingen meer ontvangen, en zal alles dus niet meer werken.
+4/ Beschrijf in je eigen woorden wat software architectuur is.
+Software architectuur is het process om een probleem op te lossen waar uw klant mee naar u komt. 
+Door aan software architectuur te doen kan je hierdoor een gestructuureerde oplossing bieden aan 
+uw klant, hiermee doorloop je verschillende kanten van het project, zowel de business kant, 
+als de technische kant als de applicatie kant en ook de informatieve kant.
